@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+/** importa modulo method-override */
+const methodOverride = require('method-override');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -19,6 +21,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+/*permitindo que a pasta /uploads seja acessada a partir do fron-end*/
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+/**ativa o method-override em toda a aplicacao */
+app.use(methodOverride('_method'));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

@@ -1,9 +1,1 @@
-[
-    {
-        "id": "c98674df-ba2c-4610-878c-9e0d7fd6be7a",
-        "nome": "Banho e tosa",
-        "descricao": "banho completo, tosa basica.",
-        "preco": "49",
-        "ilustracao": ""
-    }
-]
+[{"id":"cea17e93-53a5-4ca8-80e8-b4c07acb750c","nome":"  Banho  ","descricao":"  Banho básico     ","preco":"50","ilustracao":"ilustracao1622680127992.jpg"},{"id":"2c91198f-27d7-4c3c-957e-5c5afc8e6941","nome":"Tosa","descricao":"Tosa básica. ","preco":"30","ilustracao":"ilustracao1622680251549.jpg"},{"id":"28c8336b-3166-42db-a419-89b1784a7ac2","nome":"Banho e Tosa","descricao":"Banho completo e tosa","preco":"50","ilustracao":"ilustracao1623022302830.png"}]

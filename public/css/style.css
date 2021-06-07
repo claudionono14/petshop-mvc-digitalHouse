@@ -228,7 +228,10 @@ section.servicos-lista article .thumb {
     max-width: 100%;
     width: 250px;
     height: 250px;
-    background-color: #555;
+    background-color: #fff;
+    background-size: cover; /* a imagem de fundo vai cobrir todo o elemento */
+    background-repeat: no-repeat; /* a imagem de fundo não se repete */
+    background-position: center; /* a imagem de fundo fica ao centro */
     margin: 0 30px 30px;
 }
 
