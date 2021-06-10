@@ -3,8 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-/** importa modulo method-override */
+/** importa globalmente o  modulo method-override */
 const methodOverride = require('method-override');
+/** importa globalmente o  modulo middleware */
+const middlewareLog = require('./middlewares/log');
+/** importa globalmente o  modulo express-session */
+const session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -25,10 +29,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 /**ativa o method-override em toda a aplicacao */
 app.use(methodOverride('_method'));
+/** middlewares globais */
+app.use(middlewareLog);
+app.use(session({ secret: 'petshop-express' }));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', usersRouter); //app.use('/users', usersRouter); foi removido o users.
 app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler

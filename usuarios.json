@@ -1,0 +1,14 @@
+[
+    {
+        "id": "0954dd0b-7bad-468b-9f5d-16585a8a5bcd",
+        "nome": "teste",
+        "email": "teste@email.com",
+        "senha": "$2b$10$Fmmz0Fmi.dlCscVybc2zH.cYOphM3gHE6jIWadZcHppAGc131wGJu"
+    },
+    {
+        "id": "df20cf9b-0ef4-43db-b14f-2060df3a5013",
+        "nome": "claudio",
+        "email": "claudio@email.com",
+        "senha": "$2b$10$lF/3yrrQmpc2q2q4siHqEeNZpw4V/QGLqCaeisV.1qbz2Kwji3Ttu"
+    }
+]

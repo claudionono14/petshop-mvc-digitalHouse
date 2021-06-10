@@ -27,9 +27,12 @@ const servicosController = {
     salvar: (request, response) => {
         let { nome, descricao, preco } = request.body;
 
+        
         /* pegando o nome do arquivo (upload) */
         let ilustracao = request.file.filename;
-        // let ilustracao = request.file.path;
+
+ 
+        // let ilustracao = request.file.path; Vai buscar o nome completo da imagem e causa problema no windows.
 
         /** adiciona o novo serviço no array */
         servicos.push({ id: uuid(), nome, descricao, preco, ilustracao });
