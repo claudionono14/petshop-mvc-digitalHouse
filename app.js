@@ -31,6 +31,7 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 app.use(methodOverride('_method'));
 /** middlewares globais */
 app.use(middlewareLog);
+/** Tornando a session global */
 app.use(session({ secret: 'petshop-express' }));
 
 
